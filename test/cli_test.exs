@@ -11,8 +11,4 @@ defmodule CliTest do
   test "returns blank string for bad options" do
     assert HelloElixir.CLI.parse_args(["--foo", "World"]) == ""
   end
-
-  test "fetches tweets" do
-    assert HelloElixir.CLI.fetch_tweets("usr_bin_rocky") != nil
-  end
 end

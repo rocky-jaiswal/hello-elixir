@@ -3,7 +3,7 @@ defmodule HelloElixir.CLI do
   def main(args) do
     args
     |> parse_args
-    |> fetch_tweets
+    |> HelloElixir.TwitterClient.fetch_tweets
     |> pretty_print
   end
 
@@ -13,12 +13,6 @@ defmodule HelloElixir.CLI do
       { [name: greeter], _, _ } -> greeter
       _ -> ""
     end
-  end
-
-  def fetch_tweets(nick) do
-    ExTwitter.user_timeline([screen_name: nick, count: 5]) |>
-    Enum.map(fn(tweet) -> tweet.text end) |>
-    Enum.join("\n-----\n")
   end
 
   def pretty_print(args) do

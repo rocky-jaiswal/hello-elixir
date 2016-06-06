@@ -1,10 +1,10 @@
-defmodule HelloWorld.Mixfile do
+defmodule HelloElixir.Mixfile do
   use Mix.Project
 
   def project do
-    [app: :hello_world,
+    [app: :hello_elixir,
      version: "0.0.1",
-     elixir: "~> 1.2",
+     elixir: "~> 1.0",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      deps: deps,
@@ -35,6 +35,6 @@ defmodule HelloWorld.Mixfile do
   end
 
   defp escript_config do
-    [ main_module: HelloWorld.CLI ]
+    [ main_module: HelloElixir.CLI ]
   end
 end

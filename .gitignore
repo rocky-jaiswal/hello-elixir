@@ -4,4 +4,4 @@
 erl_crash.dump
 *.ez
 config/twitter.exs
-hello_world
+hello_elixir

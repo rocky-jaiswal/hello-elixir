@@ -2,4 +2,4 @@
 
 **My first elixir project**
 
-```./build_and_run.sh```
+    ./build_and_run.sh

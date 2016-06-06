@@ -1,0 +1,8 @@
+use Mix.Config
+
+config :extwitter, :oauth, [
+   consumer_key: "ghkjgh",
+   consumer_secret: "hdf",
+   access_token: "hgft6-hfg",
+   access_token_secret: "56hfr6"
+]
